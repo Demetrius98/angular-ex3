@@ -19,7 +19,7 @@ export class MainPageComponent implements OnInit {
 
   constructor(private _authService: AuthService,
               private _router : Router,
-              private _messengerService: MessengerService) { }
+              public _messengerService: MessengerService) { }
 
   ngOnInit() {
     this._messengerService.refreshData();
